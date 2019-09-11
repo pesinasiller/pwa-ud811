@@ -64,7 +64,7 @@ body {
     cursor: pointer;
   }
   #butRefresh {
-    background: url(/images/ic_refresh_white_24px.svg) center center no-repeat;
+    background: url(images/ic_refresh_white_24px.svg) center center no-repeat;
   }
   #butAdd {
     background: url(/images/ic_add_white_24px.svg) center center no-repeat;
@@ -266,17 +266,17 @@ body {
   .icon {
     background-repeat: no-repeat;
     background-size: contain;
-    &.clear-day { background-image: url('/images/clear.png'); }
-    &.clear-night { background-image: url('/images/clear.png'); }
-    &.rain { background-image: url('/images/rain.png'); }
-    &.snow { background-image: url('/images/snow.png'); }
-    &.sleet { background-image: url('/images/sleet.png'); }
-    &.wind { background-image: url('/images/wind.png'); }
-    &.fog { background-image: url('/images/fog.png'); }
-    &.cloudy { background-image: url('/images/cloudy.png'); }
-    &.partly-cloudy-day { background-image: url('/images/partly-cloudy.png'); }
-    &.partly-cloudy-night { background-image: url('/images/partly-cloudy.png'); }
-    &.thunderstorms { background-image: url('/images/thunderstorms.png'); }
+    &.clear-day { background-image: url('images/clear.png'); }
+    &.clear-night { background-image: url('images/clear.png'); }
+    &.rain { background-image: url('images/rain.png'); }
+    &.snow { background-image: url('images/snow.png'); }
+    &.sleet { background-image: url('images/sleet.png'); }
+    &.wind { background-image: url('images/wind.png'); }
+    &.fog { background-image: url('images/fog.png'); }
+    &.cloudy { background-image: url('images/cloudy.png'); }
+    &.partly-cloudy-day { background-image: url('images/partly-cloudy.png'); }
+    &.partly-cloudy-night { background-image: url('images/partly-cloudy.png'); }
+    &.thunderstorms { background-image: url('images/thunderstorms.png'); }
   }
 }
 
