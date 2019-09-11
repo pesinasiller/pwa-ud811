@@ -42,7 +42,7 @@ gulp.task('generate-sw', function() {
 });
 
 gulp.task('serve', ['generate-sw'], function() {
-  gulp.watch('./styles/*.scss', ['sass']);
+  gulp.watch('styles/*.scss', ['sass']);
   browserSync({
     notify: false,
     logPrefix: 'weatherPWA',
@@ -50,11 +50,11 @@ gulp.task('serve', ['generate-sw'], function() {
     open: false
   });
   gulp.watch([
-    './*.html',
-    './scripts/*.js',
-    './styles/*.css',
-    '!./service-worker.js',
-    '!./gulpfile.js'
+    '*.html',
+    'scripts/*.js',
+    'styles/*.css',
+    '!service-worker.js',
+    '!gulpfile.js'
   ], ['generate-sw'], browserSync.reload);
 });
 
