@@ -10,7 +10,7 @@ var swPrecache = require('sw-precache');
 
 gulp.task('sass', function () {
   return gulp
-    .src('./styles/*.scss')
+    .src('styles/*.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(gulp.dest('./styles/'))
@@ -22,10 +22,10 @@ gulp.task('sass', function () {
 gulp.task('generate-sw', function() {
   var swOptions = {
     staticFileGlobs: [
-      './index.html',
-      './images/*.{png,svg,gif,jpg}',
-      './scripts/*.js',
-      './styles/*.css'
+      'index.html',
+      'images/*.{png,svg,gif,jpg}',
+      'scripts/*.js',
+      'styles/*.css'
     ],
     stripPrefix: '.',
     runtimeCaching: [{
@@ -38,7 +38,7 @@ gulp.task('generate-sw', function() {
       }
     }]
   };
-  return swPrecache.write('./service-worker.js', swOptions);
+  return swPrecache.write('service-worker.js', swOptions);
 });
 
 gulp.task('serve', ['generate-sw'], function() {
